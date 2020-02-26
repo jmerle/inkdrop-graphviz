@@ -25,7 +25,7 @@ First of all, make sure you got [Graphviz](https://www.graphviz.org/) installed 
 
 Which will be rendered as:
 
-![](https://i.imgur.com/sEU94pl.png)
+![](./media/graph.png)
 
 In the place of `dot` you can also use `neato`, `fdp`, `sfdp`, `twopi`, `circo`, `osage` or `patchwork` if the layout program you specify is available on your `PATH`.
 
