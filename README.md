@@ -14,7 +14,7 @@ ipm install graphviz
 
 ## Usage
 
-First of all, make sure you got [Graphviz](https://www.graphviz.org/) installed and that tools like `dot` and `neato` are available on your `PATH`. After that, you can add code blocks like this:
+First of all, make sure you got [Graphviz](https://www.graphviz.org/) installed and that `dot` is available on your `PATH`. If that's all done you can add code blocks like this:
 
     ```dot
     graph {
