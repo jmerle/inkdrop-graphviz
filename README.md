@@ -4,7 +4,7 @@
 [![Latest release](https://img.shields.io/github/v/release/jmerle/inkdrop-graphviz)](https://my.inkdrop.app/plugins/graphviz)
 [![License](https://img.shields.io/github/license/jmerle/inkdrop-graphviz)](https://github.com/jmerle/inkdrop-graphviz/blob/master/LICENSE)
 
-This plugin makes it possible to add Graphviz diagrams to notes. It is based on my [PlantUML plugin](https://my.inkdrop.app/plugins/plantuml) and supports all Graphviz layout programs.
+This plugin makes it possible to add Graphviz graphs to notes. It is based on my [PlantUML plugin](https://my.inkdrop.app/plugins/plantuml) and supports all Graphviz layout programs.
 
 ## Install
 

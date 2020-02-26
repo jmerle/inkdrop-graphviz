@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { generateBase64Url } from './runner';
 
 export function createComponent(program) {
-  class Diagram extends React.Component {
+  class Graph extends React.Component {
     constructor(props) {
       super(props);
 
@@ -26,7 +26,7 @@ export function createComponent(program) {
     }
 
     componentDidMount() {
-      this.renderDiagram();
+      this.renderGraph();
 
       const { classList } = this.containerRef.current.parentElement;
       classList.add('graphviz-container');
@@ -34,7 +34,7 @@ export function createComponent(program) {
 
     componentDidUpdate(previousProps) {
       if (this.hasCodeChanged(previousProps)) {
-        this.renderDiagram();
+        this.renderGraph();
       }
     }
 
@@ -73,7 +73,7 @@ export function createComponent(program) {
       );
     }
 
-    renderDiagram() {
+    renderGraph() {
       if (this.currentPromise !== null) {
         this.currentPromise.cancel();
       }
@@ -103,9 +103,9 @@ export function createComponent(program) {
     }
   }
 
-  Diagram.propTypes = {
+  Graph.propTypes = {
     children: PropTypes.node,
   };
 
-  return Diagram;
+  return Graph;
 }
