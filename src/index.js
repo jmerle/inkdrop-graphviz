@@ -1,9 +1,31 @@
 'use babel';
 
+import { markdownRenderer } from 'inkdrop';
+import { createComponent } from './factory';
+
+const programs = [
+  'dot',
+  'neato',
+  'fdp',
+  'sfdp',
+  'twopi',
+  'circo',
+  'osage',
+  'patchwork',
+];
+
 export function activate() {
-  console.log('Plugin activated');
+  if (markdownRenderer) {
+    for (const program of programs) {
+      markdownRenderer.remarkCodeComponents[program] = createComponent(program);
+    }
+  }
 }
 
 export function deactivate() {
-  console.log('Plugin deactivated');
+  if (markdownRenderer) {
+    for (const program of programs) {
+      markdownRenderer.remarkCodeComponents[program] = null;
+    }
+  }
 }

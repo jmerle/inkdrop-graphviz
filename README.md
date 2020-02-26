@@ -4,7 +4,7 @@
 [![Latest release](https://img.shields.io/github/v/release/jmerle/inkdrop-graphviz)](https://my.inkdrop.app/plugins/graphviz)
 [![License](https://img.shields.io/github/license/jmerle/inkdrop-graphviz)](https://github.com/jmerle/inkdrop-graphviz/blob/master/LICENSE)
 
-This plugin makes it possible to add PlantUML diagrams to notes. It is based on my [PlantUML plugin](https://my.inkdrop.app/plugins/plantuml) and supports all major Graphviz layout programs.
+This plugin makes it possible to add Graphviz diagrams to notes. It is based on my [PlantUML plugin](https://my.inkdrop.app/plugins/plantuml) and supports all Graphviz layout programs.
 
 ## Install
 
@@ -25,9 +25,9 @@ First of all, make sure you got [Graphviz](https://www.graphviz.org/) installed 
 
 Which will be rendered as:
 
-TODO
+![](https://i.imgur.com/sEU94pl.png)
 
-In the place of `dot`, you can also use `neato`, `fdp`, `sfdp`, `twopi`, `circo`, `osage` or `patchwork` if the layout program you specify is available on your `PATH`.
+In the place of `dot` you can also use `neato`, `fdp`, `sfdp`, `twopi`, `circo`, `osage` or `patchwork` if the layout program you specify is available on your `PATH`.
 
 ## Changelog
 
