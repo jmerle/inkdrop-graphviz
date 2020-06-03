@@ -14,6 +14,15 @@ const programs = [
   'patchwork',
 ];
 
+export const config = {
+  imageFormat: {
+    title: 'Image format',
+    type: 'string',
+    enum: ['PNG', 'SVG'],
+    default: 'PNG',
+  },
+};
+
 export function activate() {
   if (markdownRenderer) {
     for (const program of programs) {

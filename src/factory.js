@@ -17,12 +17,19 @@ export function createComponent(program) {
       };
 
       this.containerRef = React.createRef();
+
+      this.configListener = inkdrop.config.onDidChange(
+        'graphviz.imageFormat',
+        () => this.renderGraph(),
+      );
     }
 
     componentWillUnmount() {
       if (this.currentPromise !== null) {
         this.currentPromise.cancel();
       }
+
+      this.configListener.dispose();
     }
 
     componentDidMount() {
@@ -58,7 +65,17 @@ export function createComponent(program) {
         return this.renderError(error.message);
       }
 
-      return <img src={image} ref={this.containerRef} />;
+      if (inkdrop.config.get('graphviz.imageFormat') === 'PNG') {
+        return <img ref={this.containerRef} src={image} />;
+      } else {
+        const content = {
+          __html: image,
+        };
+
+        return (
+          <div ref={this.containerRef} dangerouslySetInnerHTML={content} />
+        );
+      }
     }
 
     renderError(message) {

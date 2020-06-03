@@ -10,7 +10,9 @@ Promise.config({
 export function generateBase64Url(program, code) {
   return new Promise((resolve, reject, onCancel) => {
     try {
-      const proc = execa(program, ['-Tpng']);
+      const imageFormat = inkdrop.config.get('graphviz.imageFormat');
+
+      const proc = execa(program, [`-T${imageFormat.toLowerCase()}`]);
 
       let canceled = false;
 
@@ -50,7 +52,12 @@ export function generateBase64Url(program, code) {
         const stderrBuffer = Buffer.concat(stderrChunks);
 
         if (exitCode === 0) {
-          resolve('data:image/png;base64,' + stdoutBuffer.toString('base64'));
+          if (imageFormat === 'PNG') {
+            resolve('data:image/png;base64,' + stdoutBuffer.toString('base64'));
+          } else {
+            const svg = stdoutBuffer.toString().trim();
+            resolve(svg.substr(svg.indexOf('<svg')));
+          }
         } else {
           reject(new Error(stderrBuffer.toString()));
         }
