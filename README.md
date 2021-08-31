@@ -1,6 +1,6 @@
 # Graphviz plugin for Inkdrop
 
-[![Build Status](https://github.com/jmerle/inkdrop-graphviz/workflows/Build/badge.svg)](https://github.com/jmerle/inkdrop-graphviz/actions?query=workflow%3ABuild)
+[![Build status](https://github.com/jmerle/inkdrop-graphviz/workflows/Build/badge.svg)](https://github.com/jmerle/inkdrop-graphviz/actions?query=workflow%3ABuild)
 [![Latest release](https://inkdrop-plugin-badge.vercel.app/api/version/graphviz?style=flat)](https://my.inkdrop.app/plugins/graphviz)
 [![Downloads](https://inkdrop-plugin-badge.vercel.app/api/downloads/graphviz?style=flat)](https://my.inkdrop.app/plugins/graphviz)
 [![License](https://img.shields.io/github/license/jmerle/inkdrop-graphviz)](https://github.com/jmerle/inkdrop-graphviz/blob/master/LICENSE)
