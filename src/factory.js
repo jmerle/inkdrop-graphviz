@@ -1,7 +1,6 @@
 'use babel';
 
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { generateBase64Url } from './runner';
 
 export function createComponent(program) {
@@ -119,10 +118,6 @@ export function createComponent(program) {
       return this.getCode() !== this.getCode(otherProps);
     }
   }
-
-  Graph.propTypes = {
-    children: PropTypes.node,
-  };
 
   return Graph;
 }
