@@ -1,9 +1,8 @@
 # Graphviz plugin for Inkdrop
 
-[![Build status](https://github.com/jmerle/inkdrop-graphviz/workflows/Build/badge.svg)](https://github.com/jmerle/inkdrop-graphviz/actions?query=workflow%3ABuild)
-[![Latest release](https://inkdrop-plugin-badge.vercel.app/api/version/graphviz?style=flat)](https://my.inkdrop.app/plugins/graphviz)
+[![Build Status](https://github.com/jmerle/inkdrop-graphviz/workflows/Build/badge.svg)](https://github.com/jmerle/inkdrop-graphviz/actions/workflows/build.yml)
+[![Latest Release](https://inkdrop-plugin-badge.vercel.app/api/version/graphviz?style=flat)](https://my.inkdrop.app/plugins/graphviz)
 [![Downloads](https://inkdrop-plugin-badge.vercel.app/api/downloads/graphviz?style=flat)](https://my.inkdrop.app/plugins/graphviz)
-[![License](https://img.shields.io/github/license/jmerle/inkdrop-graphviz)](https://github.com/jmerle/inkdrop-graphviz/blob/master/LICENSE)
 
 This plugin makes it possible to add Graphviz graphs to notes. It is based on my [PlantUML plugin](https://my.inkdrop.app/plugins/plantuml) and supports all Graphviz layout programs.
 
